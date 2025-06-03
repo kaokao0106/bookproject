@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}書籍削除{% endblock %}
+
+{% block content %}
+    <from method='post'>
+        {% csrf-token %}
+        <button type='submit'>{{ object.title }}を削除する</button>
+    </from>
+{% endblock %}
