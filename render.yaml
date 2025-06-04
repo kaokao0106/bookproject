@@ -1,8 +1,9 @@
-database:
+databases:
   - name: mysitedb
     plan: free
-    databaseName: imedakao
-    user: imedakao
+    properties:
+      databaseName: imedakao
+      user: imedakao
 
 services:
   - type: web
@@ -17,4 +18,4 @@ services:
           name: mysitedb
           property: connectionString
       - key: WEB_CONCURRENCY
-        value: 4
+        value: "4"
