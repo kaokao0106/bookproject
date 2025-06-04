@@ -1,9 +1,8 @@
 databases:
   - name: mysitedb
     plan: free
-    properties:
-      databaseName: imedakao
-      user: imedakao
+    databaseName: imedakao
+    user: imedakao
 
 services:
   - type: web
